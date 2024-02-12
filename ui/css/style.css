@@ -20,7 +20,7 @@ main {
 }
 main .stats {
   position: absolute;
-  top: 0;
+  top: 50px;
   right: 0;
   padding-top: 25px;
   display: flex;
@@ -32,13 +32,13 @@ main .stats .logo {
   padding-right: 25px;
 }
 main .stats .logo img {
-  max-height: 75px;
-  max-width: 150px;
+  max-height: 100px;
+  max-width: 175px;
 }
 main .stats .other {
   padding-left: 10px;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.02) 20%, rgba(255, 255, 255, 0.4) 100%);
-  height: 50px;
+  height: 100px;
   width: 200px;
   color: #fff;
   position: relative;
@@ -50,11 +50,11 @@ main .stats .other {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
 }
-main .stats .other .top, main .stats .other .bottom {
+main .stats .other .top, main .stats .other .middle, main .stats .other .bottom {
   width: 100%;
   display: flex;
 }
-main .stats .other .top .id, main .stats .other .top .ping, main .stats .other .top .cash, main .stats .other .top .bank, main .stats .other .bottom .id, main .stats .other .bottom .ping, main .stats .other .bottom .cash, main .stats .other .bottom .bank {
+main .stats .other .top .id, main .stats .other .top .ping, main .stats .other .top .cash, main .stats .other .top .bank, main .stats .other .middle .id, main .stats .other .middle .ping, main .stats .other .middle .cash, main .stats .other .middle .bank, main .stats .other .bottom .job {
   width: 50%;
 }
 main .stats .other::before {
@@ -84,13 +84,13 @@ main .status {
   color: #fff;
 }
 main .status .map-outline {
-  width: 270px;
-  height: 180px;
-  border: 1px solid rgba(255, 255, 255, 0.2352941176);
-  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.2352941176), 0 0 5px 1px rgba(255, 255, 255, 0.2352941176) inset;
+  width: 365px;
+  height: 230px;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 0 5px 1px rgb(255, 255, 255), 0 0 5px 1px rgb(255, 255, 255) inset;
   position: absolute;
-  left: 5px;
-  bottom: 10px;
+  left: 12px;
+  bottom: 20px;
 }
 main .status .status-wrapper {
   width: 40px;
@@ -110,7 +110,7 @@ main .status .status-wrapper .health-wrapper {
   height: 40px;
   border: 3px solid #fff;
   padding: 2px;
-  border-radius: 50%;
+  border-radius: 10px;
   box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.4705882353), 0 0 5px 1px rgba(255, 255, 255, 0.4705882353) inset;
 }
 main .status .status-wrapper .health-wrapper .health {
@@ -120,7 +120,7 @@ main .status .status-wrapper .health-wrapper .health {
   width: 30px;
   height: 30px;
   background-image: conic-gradient(#fff 64%, transparent 17%, transparent);
-  border-radius: 50%;
+  border-radius: 7px;
 }
 main .status .status-wrapper .health-wrapper .health img {
   width: 20px;
@@ -130,7 +130,7 @@ main .status .status-wrapper .armour-wrapper {
   height: 40px;
   border: 3px solid #fff;
   padding: 2px;
-  border-radius: 50%;
+  border-radius: 10px;
   box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.4705882353), 0 0 5px 1px rgba(255, 255, 255, 0.4705882353) inset;
 }
 main .status .status-wrapper .armour-wrapper .armour {
@@ -140,7 +140,7 @@ main .status .status-wrapper .armour-wrapper .armour {
   width: 30px;
   height: 30px;
   background-image: conic-gradient(#fff 64%, transparent 17%, transparent);
-  border-radius: 50%;
+  border-radius: 7px;
 }
 main .status .status-wrapper .armour-wrapper .armour img {
   width: 18px;
@@ -150,7 +150,7 @@ main .status .status-wrapper .hunger-wrapper {
   height: 40px;
   border: 3px solid #fff;
   padding: 2px;
-  border-radius: 50%;
+  border-radius: 10px;
   box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.4705882353), 0 0 5px 1px rgba(255, 255, 255, 0.4705882353) inset;
 }
 main .status .status-wrapper .hunger-wrapper .hunger {
@@ -160,7 +160,7 @@ main .status .status-wrapper .hunger-wrapper .hunger {
   width: 30px;
   height: 30px;
   background-image: conic-gradient(#fff 64%, transparent 17%, transparent);
-  border-radius: 50%;
+  border-radius: 7px;
 }
 main .status .status-wrapper .hunger-wrapper .hunger img {
   width: 16px;
@@ -170,7 +170,7 @@ main .status .status-wrapper .thirst-wrapper {
   height: 40px;
   border: 3px solid #fff;
   padding: 2px;
-  border-radius: 50%;
+  border-radius: 10px;
   box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.4705882353), 0 0 5px 1px rgba(255, 255, 255, 0.4705882353) inset;
 }
 main .status .status-wrapper .thirst-wrapper .thirst {
@@ -180,7 +180,7 @@ main .status .status-wrapper .thirst-wrapper .thirst {
   width: 30px;
   height: 30px;
   background-image: conic-gradient(#fff 64%, transparent 17%, transparent);
-  border-radius: 50%;
+  border-radius: 7px;
 }
 main .status .status-wrapper .thirst-wrapper .thirst img {
   width: 16px;
@@ -190,7 +190,7 @@ main .status .status-wrapper .stamina-wrapper {
   height: 40px;
   border: 3px solid #fff;
   padding: 2px;
-  border-radius: 50%;
+  border-radius: 10px;
   box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.4705882353), 0 0 5px 1px rgba(255, 255, 255, 0.4705882353) inset;
 }
 main .status .status-wrapper .stamina-wrapper .stamina {
@@ -200,7 +200,7 @@ main .status .status-wrapper .stamina-wrapper .stamina {
   width: 30px;
   height: 30px;
   background-image: conic-gradient(#fff 64%, transparent 17%, transparent);
-  border-radius: 50%;
+  border-radius: 7px;
 }
 main .status .status-wrapper .stamina-wrapper .stamina img {
   width: 18px;
@@ -210,7 +210,7 @@ main .status .status-wrapper .oxygen-wrapper {
   height: 40px;
   border: 3px solid #fff;
   padding: 2px;
-  border-radius: 50%;
+  border-radius: 10px;
   box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.4705882353), 0 0 5px 1px rgba(255, 255, 255, 0.4705882353) inset;
 }
 main .status .status-wrapper .oxygen-wrapper .oxygen {
@@ -220,7 +220,7 @@ main .status .status-wrapper .oxygen-wrapper .oxygen {
   width: 30px;
   height: 30px;
   background-image: conic-gradient(#fff 64%, transparent 17%, transparent);
-  border-radius: 50%;
+  border-radius: 7px;
 }
 main .status .status-wrapper .oxygen-wrapper .oxygen img {
   width: 18px;
@@ -232,6 +232,7 @@ main .status .location {
   position: absolute;
   display: flex;
   gap: 5px;
+  opacity: 0;
 }
 main .status span {
   font-family: "Poppins", sans-serif;
