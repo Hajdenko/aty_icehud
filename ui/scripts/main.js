@@ -135,6 +135,8 @@ $(function () {
 			$(".ping span").text(event.data.playerPing + "ms");
 			$(".bank span").text("$" + event.data.playerCash);
 			$(".cash span").text("$" + event.data.playerBank);
+			$(".job span").text(event.data.playerJob);
+			$(".job-grade span").text(event.data.playerGrade);
 		}
 
 		if (event.data.action == "StatusUpdate") {
@@ -159,7 +161,7 @@ $(function () {
 				);
 			}else{
 				$(".thirst-wrapper, .hunger-wrapper").hide()
-				$(".stats .bottom").hide()
+				$(".stats .middle").hide()
 			}
 
 			$(".location .location-text").text(event.data.street);
