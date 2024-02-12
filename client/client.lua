@@ -198,13 +198,20 @@ if Config.UsePlayerStats then
 		CreateThread(function()
 			while true do
 				if loggedIn then 
+					ESX = exports["es_extended"]:getSharedObject()
+					local xPlayer = ESX.GetPlayerData()
+					local job = xPlayer.job.label
+					local jobgrade = xPlayer.job.grade_label
+					job = job
 					triggerServerCallback("aty_icehud:getPlayerData", function(cb)
 						SendNUIMessage({
 							action = "StatsUpdate",
 							playerId = GetPlayerServerId(PlayerId()),
 							playerPing = cb.ping,
 							playerCash = cb.cash,
-							playerBank = cb.bank
+							playerBank = cb.bank,
+							playerJob = job,
+							playerGrade = jobgrade
 						})
 					end)
 				end
